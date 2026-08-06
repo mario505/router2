@@ -1,13 +1,17 @@
+import { NavLink } from "react-router-dom";
+
 function EventsNavigation() {
   return (
     <header className="enav_header">
       <nav>
         <ul className="enav_list">
           <li>
-            <a href="/events">All Events</a>
+            <NavLink to="/events" end>
+              All Events
+            </NavLink>
           </li>
           <li>
-            <a href="/events/new">New Event</a>
+            <NavLink to="/events/new">New Event</NavLink>
           </li>
         </ul>
       </nav>

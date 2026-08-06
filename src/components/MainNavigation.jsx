@@ -1,13 +1,15 @@
+import { NavLink } from "react-router-dom";
+
 function MainNavigation() {
   return (
     <header className="mnav_header">
       <nav>
         <ul className="mnav_list">
           <li>
-            <a>Home</a>
+            <NavLink to="/">Home</NavLink>
           </li>
           <li>
-            <a>Events</a>
+            <NavLink to="/events">Events</NavLink>
           </li>
         </ul>
       </nav>
