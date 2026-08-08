@@ -219,3 +219,7 @@ ul {
 .mnav_list a.active {
   color: var(--color-primary-800);
 }
+
+.content {
+  text-align: center;
+}
