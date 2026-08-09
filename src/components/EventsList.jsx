@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function EventsList({ events }) {
   return (
     <div className="events_list">
@@ -5,13 +7,13 @@ function EventsList({ events }) {
       <ul className="elist">
         {events.map((event) => (
           <li key={event.id} className="eitem">
-            <a href="...">
+            <Link to={event.id}>
               <img src={event.image} alt={event.title} />
               <div className="econtent">
                 <h2>{event.title}</h2>
                 <time>{event.date}</time>
               </div>
-            </a>
+            </Link>
           </li>
         ))}
       </ul>
